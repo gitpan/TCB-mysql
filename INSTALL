@@ -1,0 +1,34 @@
+Additional Installation Notes
+=============================
+
+General Notes
+=============
+
+Most of the scripts should be modified to match your local configuration.
+It may be worthwhile to create a centralized set of authorization files,
+to be used with the 'do' operations in each script, so that you can easily
+modify usernames and passwords without later interfering with the actual
+data.
+
+Database Installation
+=====================
+
+You don't need to do any database installation with this pacakge; the
+MySQL server should come with this database installed.
+
+Web Installation
+================
+
+The following instructions assume a fairly basic Apache configuration; it
+may not work with yours, but it has been known to work, and it's a good
+start in setting up your own configuration.  Set up your files as so:
+
+mysql-admin/		
+  .htpasswd		Created with 'htpasswd'  
+  .htgroup 		See sample htgroup-base
+  .htaccess		See sample htaccess-base
+  index.cgi		Copied or linked from cgi-bin/mysql_admin.cgi
+  stylesheet.css	Copied or linked from cgi-bin/stylesheet.css
+
+Note that *most* of these files are not installed into any directory
+structure by default, due to limitations on Perl's Makefile.PL system.

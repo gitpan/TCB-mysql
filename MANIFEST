@@ -1,0 +1,17 @@
+cgi-bin/htaccess-base
+cgi-bin/htgroup-base
+cgi-bin/htpasswd-base
+cgi-bin/mysql_admin.cgi
+cgi-bin/stylesheet.css
+Changes
+COPYRIGHT
+INSTALL
+Makefile.PL
+MANIFEST
+README
+TCB/mysql/db.pm
+TCB/mysql/host.pm
+TCB/mysql.pm
+TCB/mysql/user.pm
+test.pl
+Version.pm

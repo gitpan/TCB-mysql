@@ -1,0 +1,9 @@
+AuthType Basic
+# Replace BASEDIR with your full base directory
+AuthUserFile BASEDIR/.htpasswd
+AuthGroupFile BASEDIR/.htgroup 
+AuthName "Sysetm Database - Admin Access"
+
+deny from all
+require group admin
+satisfy any

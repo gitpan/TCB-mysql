@@ -1,0 +1,58 @@
+TCB::mysql - DBIx::Frame interface to the mysql authorization database
+======================================================================
+
+TCB::mysql is a DBIx::Frame interface to the default mysql authorization
+database that comes with MySQL.  It was written for easy tracking (though
+not adding!) of information from this database within the Theoretical and
+Computational Biophysics Group at UIUC, using the same interface as the
+rest of the databases used there.  It provides a basic administrative
+interface for adding, modifying, or deleting this information; it isn't
+as full-featured as some of the scripts that come with the package, but it
+still works pretty well.
+
+Specific tables are described in the following modules:
+
+  TCB::mysql::db	Database access
+  TCB::mysql::host	Hostname access
+  TCB::mysql::user	User access (with passwords)
+
+Prerequisites
+=============
+
+You must have the following modules installed:
+
+  DBIx::Frame		v1.06
+
+You will also need a running MySQL database, and permission to either use
+the existing contents or create new ones.
+
+Installation Notes
+==================
+
+Installing this software is easy:
+
+  perl Makefile.pl
+  make
+  make test
+  make install
+
+Database creation should not be necessary.
+
+Documentation
+=============
+
+All of the documentation is in the manual pages - 'man TCB::mysql'
+after installation, or 'pod2text TCB/mysql.pm | less' right now.
+'perldoc TCB::mysql' probably also works.
+
+Further information is available in the INSTALL file.
+
+Web Page
+========
+
+http://www.ks.uiuc.edu/Development/MDTools/tcb-mysql/
+
+                            - Tim Skirvin (tskirvin@ks.uiuc.edu)
+-- 
+   Theoretical and Computational    http://www.ks.uiuc.edu/~tskirvin/
+Biophysics, Beckman Institute, UIUC    Senior Systems Administrator
